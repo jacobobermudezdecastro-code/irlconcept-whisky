@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: writ
 
 jobs:
   scrape-and-deploy:
@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright "playwright-stealth<2"
+          pip install playwright setuptools "playwright-stealth<2"
           playwright install chromium
           playwright install-deps chromium
 
