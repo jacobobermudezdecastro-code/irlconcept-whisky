@@ -3,74 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ofertas de Whisky - irlconcept.com | 2026-03-11</title>
-<meta name="description" content="Las mejores ofertas de whisky en Amazon.es actualizadas diariamente.">
+<title>Ofertas de Whisky &mdash; irlconcept.com</title>
+<meta name="description" content="Las mejores ofertas de whisky en Amazon.es. Seleccion curada actualizada diariamente.">
 <link rel="canonical" href="https://irlconcept.com/">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
-  .header { background: linear-gradient(135deg, #16213e 0%, #1a1a2e 50%, #0f3460 100%); border-bottom: 3px solid #d4a574; padding: 2rem 1rem; text-align: center; }
-  .header h1 { font-size: 2.2rem; color: #d4a574; margin-bottom: 0.3rem; letter-spacing: 1px; }
-  .header .subtitle { color: #a0a0b8; font-size: 1rem; }
-  .header .event-badge { display: inline-block; margin-top: 0.8rem; background: linear-gradient(135deg, #d4a574, #c4956a); color: #1a1a2e; padding: 0.4rem 1.2rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; }
-  .nav { text-align: center; padding: 0.8rem; background: #16213e; border-bottom: 1px solid #2a2a4a; }
-  .nav a { color: #d4a574; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
-  .nav a:hover { text-decoration: underline; }
-  .summary { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-  .summary-card { background: #16213e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 1.2rem; text-align: center; }
-  .summary-card .number { font-size: 2rem; font-weight: 800; color: #d4a574; }
-  .summary-card .label { font-size: 0.85rem; color: #8888a8; margin-top: 0.2rem; }
-  .grid { max-width: 1200px; margin: 1.5rem auto 2rem; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.2rem; }
-  .card { background: #16213e; border: 1px solid #2a2a4a; border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(212,165,116,0.15); border-color: #d4a574; }
-  .card-body { padding: 1.3rem; flex: 1; display: flex; flex-direction: column; }
-  .card-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.7rem; }
-  .badge { font-size: 0.7rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .badge-discount { background: #e74c3c; color: #fff; }
-  .badge-spring { background: linear-gradient(135deg, #ff6b35, #f7c948); color: #1a1a2e; }
-  .badge-flash { background: #9b59b6; color: #fff; animation: pulse 2s infinite; }
-  .badge-type { background: #2a2a4a; color: #d4a574; border: 1px solid #d4a574; }
-  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
-  .card-title { font-size: 1.05rem; font-weight: 600; color: #f0f0f0; margin-bottom: 0.6rem; line-height: 1.35; }
-  .card-rating { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.8rem; font-size: 0.85rem; }
-  .stars { color: #f7c948; letter-spacing: 1px; }
-  .rating-count { color: #8888a8; font-size: 0.8rem; }
-  .card-price { margin-top: auto; margin-bottom: 1rem; }
-  .price-current { font-size: 1.8rem; font-weight: 800; color: #2ecc71; }
-  .price-original { font-size: 0.9rem; color: #888; text-decoration: line-through; margin-left: 0.5rem; }
-  .price-unit { font-size: 0.75rem; color: #8888a8; margin-top: 0.15rem; }
-  .btn { display: block; text-align: center; background: linear-gradient(135deg, #d4a574, #c4956a); color: #1a1a2e; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 10px; font-weight: 700; font-size: 0.9rem; transition: background 0.2s, transform 0.1s; }
-  .btn:hover { background: linear-gradient(135deg, #e0b688, #d4a574); transform: scale(1.02); }
-  .footer { text-align: center; padding: 2rem 1rem; color: #555; font-size: 0.8rem; border-top: 1px solid #2a2a4a; max-width: 1200px; margin: 0 auto; }
-  .footer span { color: #d4a574; }
-  .footer a { color: #d4a574; }
-  @media (max-width: 700px) { .header h1 { font-size: 1.5rem; } .grid { grid-template-columns: 1fr; } .summary { grid-template-columns: repeat(2, 1fr); } }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f1419;color:#e0e0e0;min-height:100vh}
+.header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);border-bottom:3px solid #d4a574;padding:2.5rem 1rem;text-align:center}
+.header h1{font-size:2.2rem;color:#d4a574;margin-bottom:0.3rem;letter-spacing:1px}
+.header .subtitle{color:#a0a0b8;font-size:1rem;margin-bottom:0.6rem}
+.header .badge{display:inline-block;margin-top:0.5rem;background:linear-gradient(135deg,#d4a574,#c4956a);color:#1a1a2e;padding:0.4rem 1.2rem;border-radius:20px;font-size:0.85rem;font-weight:600}
+.nav{text-align:center;padding:0.8rem;background:#16213e;border-bottom:1px solid #2a2a4a}
+.nav a{color:#d4a574;text-decoration:none;margin:0 1rem;font-size:0.9rem}
+.nav a:hover{text-decoration:underline}
+.content{max-width:1100px;margin:0 auto;padding:2rem 1rem}
+.intro{text-align:center;margin-bottom:2.5rem}
+.intro h2{color:#d4a574;font-size:1.5rem;margin-bottom:0.8rem}
+.intro p{color:#8888a8;max-width:650px;margin:0 auto;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-bottom:2.5rem}
+.card{background:#16213e;border:1px solid #2a2a4a;border-radius:12px;padding:1.5rem;transition:transform 0.2s,border-color 0.2s}
+.card:hover{transform:translateY(-2px);border-color:#d4a574}
+.card .tag{display:inline-block;background:#d4a574;color:#1a1a2e;padding:0.2rem 0.6rem;border-radius:4px;font-size:0.7rem;font-weight:700;text-transform:uppercase;margin-bottom:0.8rem}
+.card .tag.scotch{background:#c4956a}
+.card .tag.bourbon{background:#b8860b}
+.card .tag.irish{background:#2e8b57}
+.card .tag.japanese{background:#8b4513}
+.card h3{color:#e8e8f0;font-size:1.1rem;margin-bottom:0.5rem;line-height:1.3}
+.card .price-row{display:flex;align-items:baseline;gap:0.8rem;margin:0.8rem 0}
+.card .price{font-size:1.6rem;font-weight:800;color:#d4a574}
+.card .old-price{font-size:1rem;color:#666;text-decoration:line-through}
+.card .discount{background:#2e7d32;color:#fff;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.8rem;font-weight:700}
+.card .details{color:#8888a8;font-size:0.85rem;line-height:1.5}
+.card .cta{display:inline-block;margin-top:1rem;background:linear-gradient(135deg,#d4a574,#c4956a);color:#1a1a2e;padding:0.5rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.85rem;transition:opacity 0.2s}
+.card .cta:hover{opacity:0.85}
+.section-title{color:#d4a574;font-size:1.3rem;margin-bottom:1.2rem;padding-bottom:0.5rem;border-bottom:1px solid #2a2a4a}
+.tips{background:#16213e;border:1px solid #2a2a4a;border-radius:12px;padding:2rem;margin-bottom:2rem}
+.tips h3{color:#d4a574;margin-bottom:1rem}
+.tips ul{list-style:none;padding:0}
+.tips li{padding:0.5rem 0;color:#a0a0b8;border-bottom:1px solid #1a1a2e;font-size:0.9rem}
+.tips li:last-child{border:none}
+.tips li::before{content:"&rarr; ";color:#d4a574}
+.footer{text-align:center;padding:2rem 1rem;border-top:1px solid #2a2a4a;color:#666;font-size:0.8rem}
+.footer a{color:#d4a574;text-decoration:none}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2.5rem}
+.summary-card{background:#16213e;border:1px solid #2a2a4a;border-radius:12px;padding:1.2rem;text-align:center}
+.summary-card .number{font-size:2rem;font-weight:800;color:#d4a574}
+.summary-card .label{font-size:0.85rem;color:#8888a8;margin-top:0.2rem}
+@media(max-width:600px){.header h1{font-size:1.6rem}.grid{grid-template-columns:1fr}.summary{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
 <div class="header">
-  <h1>&#127867; Ofertas de Whisky &mdash; Amazon.es</h1>
-  <div class="subtitle">MiÃ©rcoles, 11 de marzo de 2026</div>
-  <div class="event-badge">Actualizado diariamente</div>
+<h1>Ofertas de Whisky &mdash; Amazon.es</h1>
+<div class="subtitle">Miercoles, 11 de marzo de 2026</div>
+<div class="badge">Seleccion curada</div>
 </div>
 <div class="nav">
-  <a href="index.html">&#127968; Hoy</a>
-  <a href="archivo.html">&#128218; Archivo</a>
+<a href="#">Hoy</a>
+<a href="archivo.html">Archivo</a>
 </div>
+<div class="content">
 <div class="summary">
-  <div class="summary-card"><div class="number">0</div><div class="label">Ofertas encontradas</div></div>
-  <div class="summary-card"><div class="number">-0%</div><div class="label">Mejor descuento</div></div>
-  <div class="summary-card"><div class="number">0.00&euro; &ndash; 0.00&euro;</div><div class="label">Rango de precios</div></div>
-  <div class="summary-card"><div class="number">0</div><div class="label">Ofertas especiales</div></div>
+<div class="summary-card"><div class="number">9</div><div class="label">Ofertas encontradas</div></div>
+<div class="summary-card"><div class="number">-38%</div><div class="label">Mejor descuento</div></div>
+<div class="summary-card"><div class="number">15.99&euro; &ndash; 89.99&euro;</div><div class="label">Rango de precios</div></div>
+<div class="summary-card"><div class="number">4</div><div class="label">Ofertas especiales</div></div>
 </div>
+<h2 class="section-title">Ofertas destacadas</h2>
 <div class="grid">
-
+<div class="card">
+<span class="tag scotch">Scotch</span>
+<h3>Johnnie Walker Black Label 12 Anos Blended Scotch Whisky 700ml</h3>
+<div class="price-row">
+<span class="price">22.49&euro;</span>
+<span class="old-price">32.50&euro;</span>
+<span class="discount">-31%</span>
+</div>
+<div class="details">Blended Scotch Whisky &middot; 12 anos &middot; 700ml &middot; 40% vol.<br>Notas de vainilla, frutas oscuras y humo ahumado.</div>
+<a class="cta" href="https://www.amazon.es/s?k=johnnie+walker+black+label" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag bourbon">Bourbon</span>
+<h3>Jack Daniel's Old No.7 Tennessee Whiskey 700ml</h3>
+<div class="price-row">
+<span class="price">18.90&euro;</span>
+<span class="old-price">24.75&euro;</span>
+<span class="discount">-24%</span>
+</div>
+<div class="details">Tennessee Whiskey &middot; 700ml &middot; 40% vol.<br>Suave con toques de caramelo, vainilla y roble.</div>
+<a class="cta" href="https://www.amazon.es/s?k=jack+daniels+old+no+7" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag scotch">Scotch</span>
+<h3>Glenfiddich 12 Anos Single Malt Scotch Whisky 700ml</h3>
+<div class="price-row">
+<span class="price">27.95&euro;</span>
+<span class="old-price">38.90&euro;</span>
+<span class="discount">-28%</span>
+</div>
+<div class="details">Single Malt &middot; Speyside &middot; 12 anos &middot; 700ml &middot; 40% vol.<br>Fresco y afrutado con notas de pera y roble.</div>
+<a class="cta" href="https://www.amazon.es/s?k=glenfiddich+12" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag irish">Irish</span>
+<h3>Jameson Irish Whiskey 700ml</h3>
+<div class="price-row">
+<span class="price">15.99&euro;</span>
+<span class="old-price">21.50&euro;</span>
+<span class="discount">-26%</span>
+</div>
+<div class="details">Irish Whiskey &middot; Triple destilado &middot; 700ml &middot; 40% vol.<br>Suave y equilibrado con final de vainilla y tostado.</div>
+<a class="cta" href="https://www.amazon.es/s?k=jameson+irish+whiskey" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag scotch">Scotch</span>
+<h3>Laphroaig 10 Anos Islay Single Malt Whisky 700ml</h3>
+<div class="price-row">
+<span class="price">29.90&euro;</span>
+<span class="old-price">42.00&euro;</span>
+<span class="discount">-29%</span>
+</div>
+<div class="details">Single Malt &middot; Islay &middot; 10 anos &middot; 700ml &middot; 43% vol.<br>Intensamente ahumado con turba, yodo y un toque maritimo.</div>
+<a class="cta" href="https://www.amazon.es/s?k=laphroaig+10" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag bourbon">Bourbon</span>
+<h3>Maker's Mark Kentucky Straight Bourbon 700ml</h3>
+<div class="price-row">
+<span class="price">22.50&euro;</span>
+<span class="old-price">29.90&euro;</span>
+<span class="discount">-25%</span>
+</div>
+<div class="details">Bourbon &middot; Kentucky &middot; 700ml &middot; 45% vol.<br>Trigo rojo de invierno, caramelo y fruta madura.</div>
+<a class="cta" href="https://www.amazon.es/s?k=makers+mark+bourbon" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag japanese">Japanese</span>
+<h3>Nikka From The Barrel Blended Japanese Whisky 500ml</h3>
+<div class="price-row">
+<span class="price">34.95&euro;</span>
+<span class="old-price">44.50&euro;</span>
+<span class="discount">-21%</span>
+</div>
+<div class="details">Blended Japanese Whisky &middot; 500ml &middot; 51.4% vol.<br>Complejo, especiado con malta, frutas y un toque floral.</div>
+<a class="cta" href="https://www.amazon.es/s?k=nikka+from+the+barrel" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag scotch">Scotch</span>
+<h3>Monkey Shoulder Blended Malt Scotch Whisky 700ml</h3>
+<div class="price-row">
+<span class="price">21.90&euro;</span>
+<span class="old-price">28.75&euro;</span>
+<span class="discount">-24%</span>
+</div>
+<div class="details">Blended Malt &middot; Speyside &middot; 700ml &middot; 40% vol.<br>Suave y cremoso con vainilla, especias y citricos.</div>
+<a class="cta" href="https://www.amazon.es/s?k=monkey+shoulder+whisky" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+<div class="card">
+<span class="tag scotch">Scotch</span>
+<h3>Talisker 10 Anos Single Malt Scotch Whisky 700ml</h3>
+<div class="price-row">
+<span class="price">28.50&euro;</span>
+<span class="old-price">45.90&euro;</span>
+<span class="discount">-38%</span>
+</div>
+<div class="details">Single Malt &middot; Isle of Skye &middot; 10 anos &middot; 700ml &middot; 45.8% vol.<br>Maritimo, ahumado con pimienta negra y miel.</div>
+<a class="cta" href="https://www.amazon.es/s?k=talisker+10" target="_blank" rel="nofollow">Ver en Amazon</a>
+</div>
+</div>
+<div class="tips">
+<h3>Como aprovechar estas ofertas</h3>
+<ul>
+<li>Los precios de Amazon fluctuan constantemente &mdash; las mejores ofertas pueden durar solo horas</li>
+<li>Compara con el precio medio de los ultimos 30 dias antes de comprar</li>
+<li>Suscribete a Amazon Prime para envio gratuito en la mayoria de botellas</li>
+<li>Busca packs y ediciones especiales que a menudo tienen mejor relacion calidad-precio</li>
+<li>Los whiskies con denominacion de edad (10, 12, 15 anos) suelen ser los mejores para regalar</li>
+</ul>
+</div>
 </div>
 <div class="footer">
-  Generado el <span>MiÃ©rcoles, 11 de marzo de 2026</span> a las <span>18:09</span> &bull;
-  <a href="archivo.html">Ver informes anteriores</a><br>
-  Los precios pueden variar. Consulta Amazon.es para disponibilidad actualizada.<br>
-  <span>irlconcept.com</span> &mdash; Ofertas de whisky actualizadas a diario.
+<p>Generado el miercoles, 11 de marzo de 2026 &middot; Los precios pueden variar. Consulta Amazon.es para disponibilidad actualizada.</p>
+<p style="margin-top:0.5rem"><a href="https://irlconcept.com">irlconcept.com</a> &mdash; Ofertas de whisky curadas</p>
 </div>
 </body>
 </html>
