@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ofertas de Whisky - irlconcept.com | {{DATE_ISO}}</title>
+<meta name="description" content="Las mejores ofertas de whisky en Amazon.es actualizadas diariamente.">
+<link rel="canonical" href="https://irlconcept.com/">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #16213e 0%, #1a1a2e 50%, #0f3460 100%); border-bottom: 3px solid #d4a574; padding: 2rem 1rem; text-align: center; }
+  .header h1 { font-size: 2.2rem; color: #d4a574; margin-bottom: 0.3rem; letter-spacing: 1px; }
+  .header .subtitle { color: #a0a0b8; font-size: 1rem; }
+  .header .event-badge { display: inline-block; margin-top: 0.8rem; background: linear-gradient(135deg, #d4a574, #c4956a); color: #1a1a2e; padding: 0.4rem 1.2rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; }
+  .nav { text-align: center; padding: 0.8rem; background: #16213e; border-bottom: 1px solid #2a2a4a; }
+  .nav a { color: #d4a574; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
+  .nav a:hover { text-decoration: underline; }
+  .summary { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .summary-card { background: #16213e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 1.2rem; text-align: center; }
+  .summary-card .number { font-size: 2rem; font-weight: 800; color: #d4a574; }
+  .summary-card .label { font-size: 0.85rem; color: #8888a8; margin-top: 0.2rem; }
+  .grid { max-width: 1200px; margin: 1.5rem auto 2rem; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.2rem; }
+  .card { background: #16213e; border: 1px solid #2a2a4a; border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(212,165,116,0.15); border-color: #d4a574; }
+  .card-body { padding: 1.3rem; flex: 1; display: flex; flex-direction: column; }
+  .card-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.7rem; }
+  .badge { font-size: 0.7rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge-discount { background: #e74c3c; color: #fff; }
+  .badge-spring { background: linear-gradient(135deg, #ff6b35, #f7c948); color: #1a1a2e; }
+  .badge-flash { background: #9b59b6; color: #fff; animation: pulse 2s infinite; }
+  .badge-type { background: #2a2a4a; color: #d4a574; border: 1px solid #d4a574; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+  .card-title { font-size: 1.05rem; font-weight: 600; color: #f0f0f0; margin-bottom: 0.6rem; line-height: 1.35; }
+  .card-rating { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.8rem; font-size: 0.85rem; }
+  .stars { color: #f7c948; letter-spacing: 1px; }
+  .rating-count { color: #8888a8; font-size: 0.8rem; }
+  .card-price { margin-top: auto; margin-bottom: 1rem; }
+  .price-current { font-size: 1.8rem; font-weight: 800; color: #2ecc71; }
+  .price-original { font-size: 0.9rem; color: #888; text-decoration: line-through; margin-left: 0.5rem; }
+  .price-unit { font-size: 0.75rem; color: #8888a8; margin-top: 0.15rem; }
+  .btn { display: block; text-align: center; background: linear-gradient(135deg, #d4a574, #c4956a); color: #1a1a2e; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 10px; font-weight: 700; font-size: 0.9rem; transition: background 0.2s, transform 0.1s; }
+  .btn:hover { background: linear-gradient(135deg, #e0b688, #d4a574); transform: scale(1.02); }
+  .footer { text-align: center; padding: 2rem 1rem; color: #555; font-size: 0.8rem; border-top: 1px solid #2a2a4a; max-width: 1200px; margin: 0 auto; }
+  .footer span { color: #d4a574; }
+  .footer a { color: #d4a574; }
+  @media (max-width: 700px) { .header h1 { font-size: 1.5rem; } .grid { grid-template-columns: 1fr; } .summary { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>&#127867; Ofertas de Whisky &mdash; Amazon.es</h1>
+  <div class="subtitle">{{DATE_DISPLAY}}</div>
+  <div class="event-badge">Actualizado diariamente</div>
+</div>
+<div class="nav">
+  <a href="index.html">&#127968; Hoy</a>
+  <a href="archivo.html">&#128218; Archivo</a>
+</div>
+<div class="summary">
+  <div class="summary-card"><div class="number">{{NUM_DEALS}}</div><div class="label">Ofertas encontradas</div></div>
+  <div class="summary-card"><div class="number">-{{BEST_DISCOUNT}}%</div><div class="label">Mejor descuento</div></div>
+  <div class="summary-card"><div class="number">{{MIN_PRICE}}&euro; &ndash; {{MAX_PRICE}}&euro;</div><div class="label">Rango de precios</div></div>
+  <div class="summary-card"><div class="number">{{SPRING_DEALS}}</div><div class="label">Ofertas especiales</div></div>
+</div>
+<div class="grid">
+{{CARDS}}
+</div>
+<div class="footer">
+  Generado el <span>{{DATE_DISPLAY}}</span> a las <span>{{TIME}}</span> &bull;
+  <a href="archivo.html">Ver informes anteriores</a><br>
+  Los precios pueden variar. Consulta Amazon.es para disponibilidad actualizada.<br>
+  <span>irlconcept.com</span> &mdash; Ofertas de whisky actualizadas a diario.
+</div>
+</body>
+</html>
