@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: writ
+  contents: write
 
 jobs:
   scrape-and-deploy:
